@@ -12,6 +12,37 @@ Features
 - Simple, clean layout with a Submit button.
 - Ideal for learning frontend form design or testing AWS static site hosting.
 
+# Contact Details Form – Static Website Deployment on AWS
+
+This project contains a simple **login/contact form** (`login.html` and `login.css`) hosted as a static website using **Amazon S3** and served globally via **CloudFront CDN**. Infrastructure provisioning is automated using **Terraform**.
+
+---
+
+## 🌐 Live URLs
+
+- **CloudFront CDN URL** (faster, recommended):  
+  👉 https://dcuz0igrtxcod.cloudfront.net
+
+- **S3 Static Website URL** (direct bucket access):  
+  👉 http://gerald-contact-form-site.s3-website-us-east-1.amazonaws.com
+
+---
+
+## 📦 Project Structure
+
+```plaintext
+ContactDetailsForm/
+├── login.html
+├── login.css
+└── terraform/
+    ├── main.tf
+    ├── s3.tf
+    ├── cloudfront.tf
+    ├── variables.tf
+    └── outputs.tf
+
+
+
 ## 🚀 How to Deploy with Terraform
 
 This project uses Terraform to provision an S3 bucket and CloudFront distribution to host the static contact form site.
